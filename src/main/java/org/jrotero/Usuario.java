@@ -42,6 +42,7 @@ public class Usuario {
 					System.out.println( "---Deuda total---" + (totalDebt) );
 					libro.setPrestado(false);
 					libro.setLoganDate(null);
+					libro.setCodUser((Integer) null);
 					books.remove(numBooks);
 					System.out.println( libro.toString() );
 				}
@@ -56,24 +57,8 @@ public class Usuario {
 		return codUser + " | Usuario " + name + " " + lastName + " tiene un plazo de devolución de  " + numDaysDevolution + " dias | " ;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public int getCodUser() {
 		return codUser;
-	}
-
-	public int getNumDaysDevolution() {
-		return numDaysDevolution;
-	}
-
-	public void setNumDaysDevolution(int numDaysDevolution) {
-		this.numDaysDevolution = numDaysDevolution;
 	}
 
 	public List<Libro> getBooks() {
@@ -82,10 +67,6 @@ public class Usuario {
 
 	public void setBooks(List<Libro> books) {
 		this.books = books;
-	}
-
-	
-	
-	
+	}	
 
 }

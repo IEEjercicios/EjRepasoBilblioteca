@@ -19,6 +19,7 @@ public class Libro {
 	private boolean prestado;
 	
 	private String loganDate;
+	private int codUser;
 	
 	public Libro ( String title, String author, String category, Date publicationDate ) {
 		this.title = title;
@@ -108,6 +109,10 @@ public class Libro {
 
 	public void setLoganDate(String loganDate) {
 		this.loganDate = loganDate;
+	}
+
+	public void setCodUser(int codUser) {
+		this.codUser = codUser;
 	}
 	
 

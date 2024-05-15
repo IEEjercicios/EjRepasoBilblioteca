@@ -233,6 +233,7 @@ public class Main {
 			if ( libro.getTitle().equalsIgnoreCase(title) && !libro.isPrestado() ) { 
 				myUser.getBooks().add(libro);
 				libro.setPrestado(true);
+				libro.setCodUser(myUser.getCodUser());
 				
 				LocalDateTime dateTime = LocalDateTime.now();
 				String formattedDateTime = dateTime.format(formatter);
